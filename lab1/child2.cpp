@@ -1,5 +1,21 @@
 #include <iostream>
-#include "./funcs/funcs.h"
+#include <fstream>
+#include <string>
+
+bool isVowel(char c) {
+    c = std::tolower(c);
+    return c == 'e' || c == 'u' || c == 'i' || c == 'o' || c == 'a';
+}
+
+std::string removeVowels(const std::string& userString) {
+    std::string resultString;
+    for (char c : userString) {
+        if (!isVowel(c)) {
+            resultString += c;
+        }
+        return resultString;
+    }
+}
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
@@ -23,7 +39,7 @@ int main(int argc, char* argv[]) {
         std::cout << "Child2 получено: \"" << line << "\" -> \"" << processed << "\"" << std::endl;
         
         file << processed << std::endl;
-        file.flush(); // проверить функционал
+        file.flush();
     }
     
     file.close();

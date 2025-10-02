@@ -1,10 +1,9 @@
 #include <iostream>
+#include <funcs.h>
 
 bool isVowel(char c) {
     c = std::tolower(c);
-    return c == 'e' || c == 'u' || c == 'i' || c == 'o' || c == 'a' ||
-           c == 'у' || c == 'е' || c == 'ы' || c == 'а' || c == 'о' ||
-           c == 'э' || c == 'я' || c == 'и' || c == 'ю';
+    return c == 'e' || c == 'u' || c == 'i' || c == 'o' || c == 'a';
 }
 
 std::string removeVowels(const std::string& userString) {
