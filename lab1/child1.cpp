@@ -1,19 +1,7 @@
 #include <iostream>
-#include <fstream>  // Добавьте этот заголовочный файл
+#include <fstream>
 #include <string>
-
-// Временная реализация функции removeVowels
-std::string removeVowels(const std::string& str) {
-    std::string result;
-    std::string vowels = "aeiouyAEIOUYаеёиоуыэюяАЕЁИОУЫЭЮЯ";
-    
-    for (char c : str) {
-        if (vowels.find(c) == std::string::npos) {
-            result += c;
-        }
-    }
-    return result;
-}
+#include "./funcs/funcs.h"
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
@@ -21,7 +9,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
     
-    std::ofstream file(argv[1]);  // Теперь это должно работать
+    std::ofstream file(argv[1]);
     if (!file.is_open()) {
         std::cerr << "Ошибка открытия файла: " << argv[1] << std::endl;
         return 1;
