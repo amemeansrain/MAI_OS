@@ -1,0 +1,32 @@
+{
+    "max_concurrent_jobs": 4,
+    "semaphores": {
+      "sem_db": 2,
+      "sem_io": 1
+    },
+    "jobs": [
+      {
+        "id": "job1",
+        "command": "./task1.sh",
+        "deps": [],
+        "semaphore": "sem_io"
+      },
+      {
+        "id": "job2",
+        "command": "./task2.sh",
+        "deps": ["job1"],
+        "semaphore": "sem_db"
+      },
+      {
+        "id": "job3",
+        "command": "./task3.sh",
+        "deps": ["job1"],
+        "semaphore": "sem_db"
+      },
+      {
+        "id": "job4",
+        "command": "./task4.sh",
+        "deps": ["job2", "job3"]
+      }
+    ]
+  }
