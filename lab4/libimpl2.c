@@ -1,39 +1,9 @@
 #include <stddef.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
 
-// Решето Эратосфена для подсчета простых чисел
-int PrimeCount(int A, int B) {
-    if (B < 2) return 0;
-    if (A < 2) A = 2;
-    
-    int* sieve = (int*)malloc((B + 1) * sizeof(int));
-    if (!sieve) return -1;
-    
-    // Инициализация решета
-    for (int i = 0; i <= B; i++) {
-        sieve[i] = 1;
-    }
-    sieve[0] = sieve[1] = 0;
-    
-    // Решето Эратосфена
-    for (int i = 2; i * i <= B; i++) {
-        if (sieve[i]) {
-            for (int j = i * i; j <= B; j += i) {
-                sieve[j] = 0;
-            }
-        }
-    }
-    
-    // Подсчет простых чисел на отрезке [A, B]
-    int count = 0;
-    for (int i = A; i <= B; i++) {
-        if (sieve[i]) count++;
-    }
-    
-    free(sieve);
-    return count;
+// Площадь прямоугольного треугольника
+float Square(float A, float B) {
+    return (A * B) / 2.0f;  // Площадь прямоугольного треугольника
 }
 
 // Быстрая сортировка Хоара
