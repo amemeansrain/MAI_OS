@@ -1,0 +1,68 @@
+15279 execve("./static_program", ["./static_program"], 0x7ffd00ebbdb8 /* 66 vars */) = 0
+15279 brk(NULL)                         = 0x5dd25ccc0000
+15279 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c6146012000
+15279 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v3/libimpl1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v2/libimpl1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "./libimpl1.so", O_RDONLY|O_CLOEXEC) = 3
+15279 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+15279 fstat(3, {st_mode=S_IFREG|0775, st_size=15144, ...}) = 0
+15279 getcwd("/home/ame/Python_Projects/MAI_OS/lab4", 128) = 38
+15279 mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7c614600d000
+15279 mmap(0x7c614600e000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7c614600e000
+15279 mmap(0x7c614600f000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7c614600f000
+15279 mmap(0x7c6146010000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7c6146010000
+15279 close(3)                          = 0
+15279 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "./libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+15279 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+15279 fstat(3, {st_mode=S_IFREG|0644, st_size=63959, ...}) = 0
+15279 mmap(NULL, 63959, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7c6145ffd000
+15279 close(3)                          = 0
+15279 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+15279 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+15279 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15279 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+15279 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15279 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7c6145c00000
+15279 mmap(0x7c6145c28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7c6145c28000
+15279 mmap(0x7c6145db0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7c6145db0000
+15279 mmap(0x7c6145dff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7c6145dff000
+15279 mmap(0x7c6145e05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7c6145e05000
+15279 close(3)                          = 0
+15279 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c6145ffa000
+15279 arch_prctl(ARCH_SET_FS, 0x7c6145ffa740) = 0
+15279 set_tid_address(0x7c6145ffaa10)   = 15279
+15279 set_robust_list(0x7c6145ffaa20, 24) = 0
+15279 rseq(0x7c6145ffb060, 0x20, 0, 0x53053053) = 0
+15279 mprotect(0x7c6145dff000, 16384, PROT_READ) = 0
+15279 mprotect(0x7c6146010000, 4096, PROT_READ) = 0
+15279 mprotect(0x5dd25cad5000, 4096, PROT_READ) = 0
+15279 mprotect(0x7c614604a000, 8192, PROT_READ) = 0
+15279 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+15279 munmap(0x7c6145ffd000, 63959)     = 0
+15279 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+15279 getrandom("\xa6\x47\x85\xf4\x3c\xe7\x86\x99", 8, GRND_NONBLOCK) = 8
+15279 brk(NULL)                         = 0x5dd25ccc0000
+15279 brk(0x5dd25cce1000)               = 0x5dd25cce1000
+15279 write(1, "\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 \321\201\320\276 \321\201\321\202\320\260\321\202"..., 95) = 95
+15279 write(1, "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321"..., 35) = 35
+15279 write(1, "  '1 A B' - \320\277\320\276\320\264\321\201\321\207\320\265\321\202 \320\277\321\200\320"..., 80) = 80
+15279 write(1, "  '2 n a1 a2 ... an' - \321\201\320\276\321\200\321\202\320"..., 85) = 85
+15279 write(1, "  'exit' - \320\262\321\213\321\205\320\276\320\264 \320\270\320\267 \320\277\321\200\320"..., 46) = 46
+15279 write(1, "\n", 1)                 = 1
+15279 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+15279 write(1, "> ", 2)                 = 2
+15279 read(0, "1 2 3\n", 1024)          = 6
+15279 write(1, "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\277\321\200\320\276\321\201\321\202\321"..., 77) = 77
+15279 write(1, "> ", 2)                 = 2
+15279 read(0, "1 1 100\n", 1024)        = 8
+15279 write(1, "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\277\321\200\320\276\321\201\321\202\321"..., 80) = 80
+15279 write(1, "> ", 2)                 = 2
+15279 read(0, "2 5 1 3 2 5 4\n", 1024)  = 14
+15279 write(1, "\320\236\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\271 \320"..., 56) = 56
+15279 write(1, "> ", 2)                 = 2
+15279 read(0, "exit\n", 1024)           = 5
+15279 exit_group(0)                     = ?
+15279 +++ exited with 0 +++

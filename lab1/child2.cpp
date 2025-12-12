@@ -1,21 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
-bool isVowel(char c) {
-    c = std::tolower(c);
-    return c == 'e' || c == 'u' || c == 'i' || c == 'o' || c == 'a';
-}
-
-std::string removeVowels(const std::string& userString) {
-    std::string resultString;
-    for (char c : userString) {
-        if (!isVowel(c)) {
-            resultString += c;
-        }
-        return resultString;
-    }
-}
+#include "./funcs/funcs.h"
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {

@@ -12,6 +12,6 @@ std::string removeVowels(const std::string& userString) {
         if (!isVowel(c)) {
             resultString += c;
         }
-        return resultString;
     }
+    return resultString;
 }

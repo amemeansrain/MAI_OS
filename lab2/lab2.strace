@@ -1,0 +1,110 @@
+execve("./main", ["./main"], 0x7ffd4fe31ba0 /* 66 vars */) = 0
+brk(NULL)                               = 0x60778da47000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ba12ca1d000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=63959, ...}) = 0
+mmap(NULL, 63959, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ba12ca0d000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=2592224, ...}) = 0
+mmap(NULL, 2609472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ba12c600000
+mmap(0x7ba12c69d000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x7ba12c69d000
+mmap(0x7ba12c7e5000, 552960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e5000) = 0x7ba12c7e5000
+mmap(0x7ba12c86c000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26b000) = 0x7ba12c86c000
+mmap(0x7ba12c87a000, 12608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ba12c87a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ba12c9df000
+mmap(0x7ba12c9e3000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7ba12c9e3000
+mmap(0x7ba12ca07000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ba12ca07000
+mmap(0x7ba12ca0b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7ba12ca0b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ba12c200000
+mmap(0x7ba12c228000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ba12c228000
+mmap(0x7ba12c3b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7ba12c3b0000
+mmap(0x7ba12c3ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7ba12c3ff000
+mmap(0x7ba12c405000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ba12c405000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ba12c8f6000
+mmap(0x7ba12c906000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7ba12c906000
+mmap(0x7ba12c985000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x7ba12c985000
+mmap(0x7ba12c9dd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7ba12c9dd000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ba12c8f4000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ba12c8f1000
+arch_prctl(ARCH_SET_FS, 0x7ba12c8f1740) = 0
+set_tid_address(0x7ba12c8f1a10)         = 5259
+set_robust_list(0x7ba12c8f1a20, 24)     = 0
+rseq(0x7ba12c8f2060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7ba12c3ff000, 16384, PROT_READ) = 0
+mprotect(0x7ba12c9dd000, 4096, PROT_READ) = 0
+mprotect(0x7ba12ca0b000, 4096, PROT_READ) = 0
+mprotect(0x7ba12c86c000, 45056, PROT_READ) = 0
+mprotect(0x60778d8a4000, 4096, PROT_READ) = 0
+mprotect(0x7ba12ca55000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7ba12ca0d000, 63959)           = 0
+futex(0x7ba12c87a7bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("\x2e\x72\xf5\x36\xe6\x3e\x10\x18", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x60778da47000
+brk(0x60778da68000)                     = 0x60778da68000
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Type the amount of rows, columns"..., 59) = 59
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+read(0, "3 3 1 3\n", 1024)              = 8
+write(1, "Fill in the 3 by 3 matrix:\n", 27) = 27
+read(0, "1 2 3\n", 1024)                = 6
+read(0, "4 5 6\n", 1024)                = 6
+read(0, "7 8 9\n", 1024)                = 6
+write(1, "\nInitial matrix:\n", 17)     = 17
+write(1, "1 2 3 \n", 7)                 = 7
+write(1, "4 5 6 \n", 7)                 = 7
+write(1, "7 8 9 \n", 7)                 = 7
+write(1, "\n", 1)                       = 1
+write(1, "=== PROGRAM CONFIGURATION ===\n", 30) = 30
+write(1, "Matrix size: 3 x 3\n", 19)    = 19
+write(1, "Number of iterations (k): 1\n", 28) = 28
+write(1, "Number of threads: 3\n", 21)  = 21
+write(1, "Total elements: 9\n", 18)     = 18
+rt_sigaction(SIGRT_1, {sa_handler=0x7ba12c299520, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7ba12c245320}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ba12b800000
+mprotect(0x7ba12b801000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ba12c000990, parent_tid=0x7ba12c000990, exit_signal=0, stack=0x7ba12b800000, stack_size=0x7fff80, tls=0x7ba12c0006c0} => {parent_tid=[5327]}, 88) = 5327
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ba129a00000
+mprotect(0x7ba129a01000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ba12a200990, parent_tid=0x7ba12a200990, exit_signal=0, stack=0x7ba129a00000, stack_size=0x7fff80, tls=0x7ba12a2006c0} => {parent_tid=[5331]}, 88) = 5331
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0x7ba12a200990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 5331, NULL, FUTEX_BITSET_MATCH_ANY) = -1 EAGAIN (Resource temporarily unavailable)
+munmap(0x7ba129000000, 8392704)         = 0
+write(1, "\n", 1)                       = 1
+write(1, "=== FINAL RESULTS ===\n", 22) = 22
+write(1, "Total program execution time: 23"..., 48) = 48
+write(1, "\n", 1)                       = 1
+write(1, "Erosion matrix after 1 iteration"..., 35) = 35
+write(1, "1 1 2 \n", 7)                 = 7
+write(1, "1 1 2 \n", 7)                 = 7
+write(1, "4 4 5 \n", 7)                 = 7
+write(1, "\n", 1)                       = 1
+write(1, "Dilation matrix after 1 iteratio"..., 36) = 36
+write(1, "5 6 6 \n", 7)                 = 7
+write(1, "8 9 9 \n", 7)                 = 7
+write(1, "8 9 9 \n", 7)                 = 7
+lseek(0, -1, SEEK_CUR)                  = -1 ESPIPE (Illegal seek)
+exit_group(0)                           = ?
++++ exited with 0 +++
